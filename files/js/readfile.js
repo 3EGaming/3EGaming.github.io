@@ -27,7 +27,9 @@ function getFileAsString(filename) {
 
 function getFileAsList(filename) {
   getFileAsPromise(filename).then(function(val) { window.resultx = val; });
-  return window.resultx.split("\n");
+  console.log(resultx);
+  console.log(resultx.split("\n"));
+  return resultx.split("\n");
 }
 
 function displayPreviews(folderlist) {
