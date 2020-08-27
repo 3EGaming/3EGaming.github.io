@@ -21,8 +21,8 @@ function getFileAsPromise(filename) {
 }
 
 function getFileAsString(filename) {
-  var result = "";
-  getFileAsPromise(filename).then(function(promvar) { result.concat(promvar); });
+  var result = getFileAsPromise(filename).resolve();
+  //getFileAsPromise(filename).then(function(val) { result.concat(val); });
   return result;
 }
 
