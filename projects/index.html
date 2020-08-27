@@ -1,9 +1,13 @@
 <HTML>
 <HEAD>
 <title>3EGaming</title>
+<script src="https://3egaming.github.io/files/js/readfile.js"></script>
 </HEAD>
 <BODY>
 <div id="topbarload"></div><script src="https://3egaming.github.io/files/js/topbar.js"></script>
-<A>nothing here yet</A>
+<div id="preview_area"></div>
+<script>
+document.getElementById("preview_area").innerHTML = (displayPriviews(makeStringIntoList(readFile(folderlist.dat))));
+</script>
 </BODY>
 </HTML>
