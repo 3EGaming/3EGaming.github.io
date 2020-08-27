@@ -9,7 +9,7 @@ function getFileAsList(filename) {
         }
         
         // Examine the text in the response
-        return response.json().then(function(data) {
+        return response.text().then(function(data) {
           console.log("Read from file: ".concat(data.split("\n")));
           return data.split("\n");
         });
