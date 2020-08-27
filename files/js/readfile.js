@@ -25,14 +25,6 @@ function getFileAsString(filename) {
   return window.resultx;
 }
 
-function getFileAsList(filename) {
-  getFileAsPromise(filename).then(function(val) { window.resultx = val; });
-  await Delay.delay(500); //wait
-  console.log(window.resultx);
-  console.log(window.resultx.split("\n"));
-  return resultx.split("\n");
-}
-
 function displayPreviews(folderlist) {
   var result = "";
   for(var i in folderlist) {
