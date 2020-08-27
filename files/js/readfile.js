@@ -26,8 +26,8 @@ function getFileAsString(filename) {
 }
 
 function getFileAsList(filename) {
-  var result_ns = getFileAsString(filename);
-  return result_ns.split("\n");
+  getFileAsPromise(filename).then(function(val) { window.resultx = val; });
+  return window.resultx.split("\n");
 }
 
 function displayPreviews(folderlist) {
