@@ -8,7 +8,7 @@
 <div id="preview_area"></div>
 <script>
 document.getElementById("preview_area").innerHTML = "<H3>Loading</H3>";
-var content = readFileAsList("folderlist.dat")
+var content = getFileAsList("folderlist.dat")
 console.log(content);
 document.getElementById("preview_area").innerHTML = (displayPreviews(content_list));
 </script>
