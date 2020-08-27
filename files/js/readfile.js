@@ -27,7 +27,7 @@ function getFileAsString(filename) {
 
 function displayPreviews(folderlist) {
   var result = "";
-  for(var i in folderlist) {
+  for(i in folderlist) {
     result.concat('<A href="', folderlist[i], '"><iframe src="', folderlist[i], '/preview/" height="90" width="50%" scrolling="no"></iframe></A><P></P>')
   }
   return result;
