@@ -10,8 +10,11 @@
 <script>
 document.getElementById("preview_area").innerHTML = "<H3>Loading</H3>";
 var content = getFileAsString("folderlist.dat")
+function showpre() {
+  document.getElementById("preview_area").innerHTML = (displayPreviews(content.split("\n")));
+}
 console.log(content);
-document.getElementById("preview_area").innerHTML = (displayPreviews(content.split("\n")));
+setTimeout(showpre, 1000)
 </script>
 </BODY>
 </HTML>
