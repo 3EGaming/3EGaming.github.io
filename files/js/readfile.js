@@ -1,13 +1,13 @@
 function getFileAsList(filename) {
   return fetch(filename)
     .then(
-      return function(response) {
+      function(response) {
         if (response.status !== 200) {
           console.log('Looks like there was a problem. Status Code: ' +
             response.status);
           return;
         }
-  
+        
         // Examine the text in the response
         return response.json().then(function(data) {
           console.log("Read from file: ".concat(data.split("\n")));
