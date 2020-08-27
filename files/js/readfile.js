@@ -1,3 +1,5 @@
+import * as Delay from "https://3egaming.github.io/files/js/delay.js"
+
 function getFileAsPromise(filename) {
   return fetch(filename)
     .then(
@@ -27,6 +29,7 @@ function getFileAsString(filename) {
 
 function getFileAsList(filename) {
   getFileAsPromise(filename).then(function(val) { window.resultx = val; });
+  await Delay.delay(500); //wait
   console.log(window.resultx);
   console.log(window.resultx.split("\n"));
   return resultx.split("\n");
