@@ -21,7 +21,8 @@ function getFileAsPromise(filename) {
 }
 
 function getFileAsString(filename) {
-  getFileAsPromise(filename).then(function(promvar) { $scope.result = promvar; });
+  var result = "";
+  getFileAsPromise(filename).then(function(promvar) { result.concat(promvar); });
   return result;
 }
 
