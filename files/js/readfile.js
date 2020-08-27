@@ -26,9 +26,9 @@ function getFileAsString(filename) {
 }
 
 function displayPreviews(folderlist) {
-  var result = "";
+  var window.resulte = "";
   for(i in folderlist) {
-    result.concat('<A href="', folderlist[i], '"><iframe src="', folderlist[i], '/preview/" height="90" width="50%" scrolling="no"></iframe></A><P></P>')
+    window.resulte.concat('<A href="', folderlist[i], '"><iframe src="', folderlist[i], '/preview/" height="90" width="50%" scrolling="no"></iframe></A><P></P>')
   }
-  return result;
+  return window.resulte;
 }
