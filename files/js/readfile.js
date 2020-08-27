@@ -19,17 +19,16 @@ function readFileNew(filename) {
           response.status);
         return;
       }
-
-      // Examine the text in the response
       response.text().then(function(data) {
         console.log("Read from file: ".concat(data));
-        return data;
+        var result = data;
       });
     }
   )
   .catch(function(err) {
     console.log('Fetch Error :-S', err);
   });
+  return result;
 }
 
 function makeStringIntoList(instring) {
