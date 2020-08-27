@@ -21,7 +21,7 @@ function getFileAsPromise(filename) {
 }
 
 function getFileAsString(filename) {
-  getFileAsPromise(filename).then(async function(val) { await delay(500); window.resultx = val; });
+  getFileAsPromise(filename).then(function(val) { window.resultx = val; });
   return window.resultx;
 }
 
