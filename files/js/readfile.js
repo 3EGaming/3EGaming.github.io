@@ -1,37 +1,23 @@
-function readFile(filename) {
-  async: true
-  var result = null;
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("GET", filename, false);
-  xmlhttp.send();
-  if (xmlhttp.status==200) {
-    result = xmlhttp.responseText;
-  }
-  return result;
-}
-
-function readFileNew(filename) {
-  fetch(filename)
-  .then(
-    function(response) {
-      if (response.status !== 200) {
-        console.log('Looks like there was a problem. Status Code: ' +
-          response.status);
-        return null;
+function getFileAsList(filename) {
+  return fetch(filename)
+    .then(
+      return function(response) {
+        if (response.status !== 200) {
+          console.log('Looks like there was a problem. Status Code: ' +
+            response.status);
+          return;
+        }
+  
+        // Examine the text in the response
+        return response.json().then(function(data) {
+          console.log("Read from file: ".concat(data.split("\n")));
+          return data.split("\n");
+        });
       }
-      return response.text().then(function(data) {
-        console.log("Read from file: ".concat(data));
-        var result = data;
-        return result;
-      });
-    }
-  )
-  .catch(function(err) {
-    console.log('Fetch Error :-S', err);
-    return null;
-  });
-  //return result;
-  return data;
+    )
+    .catch(function(err) {
+      console.log('Fetch Error :-S', err);
+    });
 }
 
 function makeStringIntoList(instring) {
