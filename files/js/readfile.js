@@ -21,7 +21,8 @@ function getFileAsPromise(filename) {
 }
 
 function getFileAsString(filename) {
-  getFileAsPromise(filename).then(function(promvar) { return promvar; });
+  getFileAsPromise(filename).then(function(promvar) { $scope.result = promvar; });
+  return result;
 }
 
 function getFileAsList(filename) {
