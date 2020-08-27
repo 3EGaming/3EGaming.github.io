@@ -17,18 +17,21 @@ function readFileNew(filename) {
       if (response.status !== 200) {
         console.log('Looks like there was a problem. Status Code: ' +
           response.status);
-        return;
+        return null;
       }
-      response.text().then(function(data) {
+      return response.text().then(function(data) {
         console.log("Read from file: ".concat(data));
         var result = data;
+        return result;
       });
     }
   )
   .catch(function(err) {
     console.log('Fetch Error :-S', err);
+    return null;
   });
-  return result;
+  //return result;
+  return data;
 }
 
 function makeStringIntoList(instring) {
