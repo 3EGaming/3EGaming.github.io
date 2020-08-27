@@ -1,5 +1,3 @@
-import * as Delay from "https://3egaming.github.io/files/js/delay.js"
-
 function getFileAsPromise(filename) {
   return fetch(filename)
     .then(
