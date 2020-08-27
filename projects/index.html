@@ -9,7 +9,7 @@
 <script>
 document.getElementById("preview_area").innerHTML = "<H3>Loading</H3>";
 var content = readFileNew("folderlist.dat")
-document.getElementById("preview_area").innerHTML = (displayPreviews(makeStringIntoList(content)));
+document.getElementById("preview_area").innerHTML = (displayPreviews(content.split("\n")));
 </script>
 </BODY>
 </HTML>
