@@ -1,4 +1,5 @@
 function readFile(filename) {
+  async: true
   var result = null;
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.open("GET", filename, false);
