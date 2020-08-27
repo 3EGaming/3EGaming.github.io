@@ -22,6 +22,7 @@ function readFileNew(filename) {
 
       // Examine the text in the response
       response.text().then(function(data) {
+        console.log("Read from file: ".concat(data));
         return data;
       });
     }
