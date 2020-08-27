@@ -7,6 +7,7 @@
 <div id="topbarload"></div><script src="https://3egaming.github.io/files/js/topbar.js"></script>
 <div id="preview_area"></div>
 <script>
+document.getElementById("preview_area").innerHTML = "<H3>Loading</H3>";
 document.getElementById("preview_area").innerHTML = (displayPreviews(readFileNew("folderlist.dat").split("\n")));
 </script>
 </BODY>
