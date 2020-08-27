@@ -1,4 +1,4 @@
-function getFileAsList(filename) {
+function getFileAsPromise(filename) {
   return fetch(filename)
     .then(
       function(response) {
@@ -10,8 +10,8 @@ function getFileAsList(filename) {
         
         // Examine the text in the response
         return response.text().then(function(data) {
-          console.log("Read from file: ".concat(data.split("\n")));
-          return data.split("\n");
+          console.log("Read from file: ".concat(data));
+          return data;
         });
       }
     )
@@ -20,8 +20,12 @@ function getFileAsList(filename) {
     });
 }
 
-function makeStringIntoList(instring) {
-  return (instring.split("\n"));
+function getFileAsString(filename) {
+  getFileAsPromise(filename).then(function(promvar) { return promvar; });
+}
+
+function getFileAsList(filename) {
+  return getFileAsString(filename).split("\n")
 }
 
 function displayPreviews(folderlist) {
