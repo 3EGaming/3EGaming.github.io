@@ -26,8 +26,9 @@ function getFileAsString(filename) {
 }
 
 function displayPreviews(folderlist) {
-  var window.resulte = "";
+  var resulte = "";
   for(i in folderlist) {
+    console.log("Adding item: ".concat(folderlist[i]))
     window.resulte.concat('<A href="', folderlist[i], '"><iframe src="', folderlist[i], '/preview/" height="90" width="50%" scrolling="no"></iframe></A><P></P>')
   }
   return window.resulte;
