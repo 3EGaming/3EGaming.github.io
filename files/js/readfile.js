@@ -21,8 +21,10 @@ function getFileAsPromise(filename) {
 }
 
 function getFileAsString(filename) {
-  getFileAsPromise(filename).then(function(val) { window.resultx = val; });
-  return window.resultx;
+  getFileAsPromise(filename).then(function(val) { window.temp_thisnameshouldneverbeused = val; });
+  var result = window.temp_thisnameshouldneverbeused
+  delete window.temp_thisnameshouldneverbeused;
+  return result;
 }
 
 function displayPreviews(folderlist) {
