@@ -29,7 +29,7 @@ function displayPreviews(folderlist) {
   var resulte = "";
   for(i in folderlist) {
     console.log("Adding item: ".concat(folderlist[i]))
-    window.resulte = resulte.concat('<A href="', folderlist[i], '"><iframe src="', folderlist[i], '/preview/" height="90" width="50%" scrolling="no"></iframe></A><P></P>')
+    window.resulte = window.resulte.concat('<div style="position:relative;"><iframe src="', folderlist[i], '/preview/" height="105" width="50%" scrolling="no"></iframe><A href="', folderlist[i], '" style="position:absolute; top:0; left:0; display:inline-block; width:50%; height:105px; z-index:5;"></A></div><P></P>')
   }
   return window.resulte;
 }
