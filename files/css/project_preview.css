@@ -1,6 +1,7 @@
     #titlepos {
+        position:absolute;
         top:0px;
-        left:115px;
+        left:105px;
     }
     #infoframe {
         position:absolute;
