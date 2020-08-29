@@ -12,5 +12,4 @@ function launchFullScreen(element) {
 
 // Launch fullscreen for browsers that support it!
 launchFullScreen(document.documentElement); // the whole page
-launchFullScreen(document.getElementById("videoElement")); // any individual element
 }
