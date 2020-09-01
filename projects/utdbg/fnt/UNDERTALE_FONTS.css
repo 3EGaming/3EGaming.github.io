@@ -1,0 +1,24 @@
+@font-face {
+  font-family: '8BitOperatorJVE';
+  src: url('eot/8bitoperator_jve.eot');
+  src: url('eot/8bitoperator_jve.eot?#iefix') format('embedded-opentype'),
+       url('woff/8bitoperator_jve.woff') format('woff'),
+       url('ttf/8bitoperator_jve.ttf')  format('truetype'),
+       url('svg/8bitoperator_jve.svg#svgFontName') format('svg');
+}
+@font-face {
+  font-family: 'PixelComicSans';
+  src: url('eot/pixel_comic_sans.eot');
+  src: url('eot/pixel_comic_sans.eot?#iefix') format('embedded-opentype'),
+       url('woff/pixel_comic_sans.woff') format('woff'),
+       url('ttf/pixel_comic_sans.ttf')  format('truetype'),
+       url('svg/pixel_comic_sans.svg#svgFontName') format('svg');
+}
+@font-face {
+  font-family: 'PixelPapyrus';
+  src: url('eot/pixel_papyrus.eot');
+  src: url('eot/pixel_papyrus.eot?#iefix') format('embedded-opentype'),
+       url('woff/pixel_papyrus.woff') format('woff'),
+       url('ttf/pixel_papyrus.ttf')  format('truetype'),
+       url('svg/pixel_papyrus.svg#svgFontName') format('svg');
+}
