@@ -1,0 +1,1 @@
+document.getElementById("mainContent").innerHTML = '<div id="topbarload"></div><script src="https://3egaming.github.io/files/js/topbar.js"></script>';
