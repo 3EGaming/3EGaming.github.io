@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<title>3EGaming - Save URL As</title>
+</HEAD>
+<BODY>
+<div id="topbarload"></div><script src="https://3egaming.github.io/files/js/topbar.js"></script>
+
+<H1>Save As for URL</H1>
+
+<script>
+    var loadMain = function() {
+        var UserLink = document.getElementById("URL").value;
+        document.getElementById("LinkLoad").innerHTML = ("<H3>Right click the link then click Save link as: <a href=\"" + UserLink + "\">" + UserLink + "</a></H3>");
+    }
+</script>
+
+<form action="javascript:" onSubmit="loadMain();"><input type="text" id="URL" name="URL" placeholder="URL" /><button>Load Save As</button></form>
+
+<div id="LinkLoad"></div>
+
+</BODY>
+</HTML>
