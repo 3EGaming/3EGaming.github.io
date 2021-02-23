@@ -1,0 +1,10 @@
+# robots.txt - 3EGaming
+
+# main
+
+User-agent: *
+Disallow: /files
+
+# sitemaps
+
+Sitemap: https://3EGaming.github.io/files/sitemaps/main.xml
