@@ -11,10 +11,10 @@ function LoadCss(cssPath) {
 
 LoadCss('./files/css/themes/common.css');
 
-if (GetCookie("theme") == "") {
+if (getCookie("theme") == "") {
     var mode = "dark";
 } else {
-    var mode = GetCookie("theme");
+    var mode = getCookie("theme");
 }
 
 LoadCss('./files/css/themes/' + mode + '.css');
