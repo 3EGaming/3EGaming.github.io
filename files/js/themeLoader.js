@@ -9,7 +9,7 @@ function LoadCss(cssPath) {
     head.appendChild(thisCss); 
 }
 
-LoadCss('./files/css/themes/common.css');
+LoadCss('/files/css/themes/common.css');
 
 if (getCookie("theme") == "") {
     var mode = "dark";
@@ -17,7 +17,7 @@ if (getCookie("theme") == "") {
     var mode = getCookie("theme");
 }
 
-LoadCss('./files/css/themes/' + mode + '.css');
+LoadCss('/files/css/themes/' + mode + '.css');
 
 function OnClickDarkMode() {
     //
