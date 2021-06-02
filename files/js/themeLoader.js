@@ -19,12 +19,17 @@ if (getCookie("theme") == "") {
 
 LoadCss('/files/css/themes/' + mode + '.css');
 
-function OnClickDarkMode() {
-    var mode = "dark";
+function OnClickThemeCommon() {
     setCookie("theme",mode,420);
+    window.location.reload();
+}
+
+function OnClickDarkMode() {
+    mode = "dark";
+    OnClickThemeCommon();
 }
 
 function OnClickLightMode() {
-    var mode = "light";
-    setCookie("theme",mode,420);
+    mode = "light";
+    OnClickThemeCommon();
 }
