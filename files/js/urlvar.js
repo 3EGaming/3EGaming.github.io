@@ -1,4 +1,4 @@
-//script to get variables from url (https://3EGaming.github.io?variable=hello&anothervariable=goodbye). use: urlVariables["variablefromurl"]
+//script to get variables from url (https://3EGaming.github.io?variable=foo&anothervariable=bar). use: urlVariables["variablefromurl"]
 var urlVariables = (function(var_a) {
     if (var_a == "") return {};
     var var_b = {};
