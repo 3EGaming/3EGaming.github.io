@@ -16,6 +16,6 @@ topbarcontent += ' href="/games/">Games</a></li><li><a';
 if (thisPage == "social") {
     topbarcontent += ' class="active"';
 }
-topbarcontent += ' href="/social/">Social</a></li><li style="float: right;"><a href="/settings/"><img src="/files/image/UI/settingsButton.png" height="25" width="25" style="display: block;"></a></li></ul>';
+topbarcontent += ' href="/social/">Social</a></li><li style="float: right;"><a href="/settings/"><img src="/files/image/UI/settingsButton.png" height="24.5" width="24.5" style="display: block;"></a></li></ul>';
 
 document.getElementById("topbar").innerHTML = topbarcontent;
