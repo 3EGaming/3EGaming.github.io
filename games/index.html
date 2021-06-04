@@ -22,13 +22,52 @@
 <script src="/files/js/cookie.js"></script>
 <script src="/files/js/themeLoader.js"></script>
 
-<script>var thisPage = "home";</script>
+<style>
+    .gameButton {
+      padding: 0px;
+      background-color: green;
+      transition: transform .2s;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      cursor: pointer;
+      clip-path: circle(50px at center);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .gameButton:hover {
+      transform: scale(1.5);
+    }
+
+    .gameButtonImage {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100px;
+    width: 100px;
+    }
+</style>
+
+<script>
+    function onClickGame(gameId) {
+        window.location.href += ("./" + gameId);
+    }
+</script>
+
+<script>var thisPage = "games";</script>
 </HEAD>
 <BODY>
     <div id="topbar"></div><script src="/files/js/newtopbarload.js"></script>
     <P>&#10240;</P>
     <div style="text-align: center;" class="defaultText">
-        <H1>Welcome to the 3EGaming website!</H1>
+        <H1>Games</H1>
+        <P>&#10240;</P>
+        <div id="gameButtons">
+            <div class="gameButton" onclick="onClickGame('trollycat');"><img src="./trollycat/pre.png" alt="Trolly Cat" class="gameButtonImage"></div>
+        </div>
     </div>
 </BODY>
 </HTML>
