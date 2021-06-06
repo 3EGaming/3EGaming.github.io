@@ -1,0 +1,26 @@
+.gameButton {
+    padding: 0px;
+    background-color: green;
+    transition: transform .2s;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    cursor: pointer;
+    clip-path: circle(50px at center);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gameButton:hover {
+    transform: scale(1.5);
+  }
+
+  .gameButtonImage {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100px;
+  width: 100px;
+  }
