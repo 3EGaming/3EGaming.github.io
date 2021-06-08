@@ -3,7 +3,6 @@
 # main
 
 User-agent: *
-Disallow: /files/image/UI
 Disallow: /files/html
 Allow: /projects
 
