@@ -12,10 +12,11 @@
   }
 
   .GBP {
-    padding-top: 55px;
-    padding-right: 55px;
-    padding-bottom: 55px;
-    padding-left: 55px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    display: inline-block;
   }
   
   .gameButton:hover {
