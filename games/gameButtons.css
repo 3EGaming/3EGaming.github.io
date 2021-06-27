@@ -9,10 +9,6 @@
     clip-path: circle(50px at center);
     position: relative;
     overflow: hidden;
-    padding-top: 55px;
-    padding-right: 55px;
-    padding-bottom: 55px;
-    padding-left: 55px;
   }
   
   .gameButton:hover {
