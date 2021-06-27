@@ -10,6 +10,13 @@
     position: relative;
     overflow: hidden;
   }
+
+  .GBP {
+    padding-top: 55px;
+    padding-right: 55px;
+    padding-bottom: 55px;
+    padding-left: 55px;
+  }
   
   .gameButton:hover {
     transform: scale(1.5);
