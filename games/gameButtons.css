@@ -9,9 +9,6 @@
     clip-path: circle(50px at center);
     position: relative;
     overflow: hidden;
-  }
-
-  .GBP {
     padding-top: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
@@ -25,10 +22,10 @@
 
   .gameButtonImage {
   position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  top: 15px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
   height: 100px;
   width: 100px;
   }
