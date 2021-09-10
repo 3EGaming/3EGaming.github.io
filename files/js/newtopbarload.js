@@ -14,4 +14,4 @@ document.getElementById("topbar").innerHTML = '<ul><li><img src="/files/image/Br
         CheckPage("home") + ' href="/">Home</a></li><li><a' + 
         CheckPage("games") + ' href="/games/">Games</a></li><li><a' + 
         CheckPage("social") + ' href="/social/">Social</a></li><li style="float: right;"' + 
-        CheckPage("settings") + '><a href="/settings/"><img src="/files/image/UI/settingsButton.png" height="24.5" width="24.5" style="display: block;"></a></li></ul>';
+        CheckPage("settings") + '><a href="/settings/"><img src="/files/image/UI/settingsButton.png" height="24.5" width="24.5" style="display: block;"></a></li></ul><br><br>';
