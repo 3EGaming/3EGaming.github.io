@@ -1,25 +1,17 @@
-var topbarcontent = '<ul><li><img src="/files/image/Branding/LOGO3E.png" height="51" width="170" style="display: block;margin-right: 0.3px;"></li>';
-
 if (typeof thisPage == 'undefined') {
     var thisPage = "";
 }
 
-topbarcontent += '<li><a';
-if (thisPage == "home") {
-    topbarcontent += ' class="active"';
+function CheckPage(pageName) {
+    if (thisPage == pageName) {
+        return ' class="active"';
+    } else {
+        return '';
+    }
 }
-topbarcontent += ' href="/">Home</a></li><li><a'
-if (thisPage == "games") {
-    topbarcontent += ' class="active"';
-}
-topbarcontent += ' href="/games/">Games</a></li><li><a';
-if (thisPage == "social") {
-    topbarcontent += ' class="active"';
-}
-topbarcontent += ' href="/social/">Social</a></li><li style="float: right;"';
-if (thisPage == "settings") {
-    topbarcontent += ' class="active"';
-}
-topbarcontent += '><a href="/settings/"><img src="/files/image/UI/settingsButton.png" height="24.5" width="24.5" style="display: block;"></a></li></ul>';
 
-document.getElementById("topbar").innerHTML = topbarcontent;
+document.getElementById("topbar").innerHTML = '<ul><li><img src="/files/image/Branding/LOGO3E.png" height="51" width="170" style="display: block;margin-right: 0.3px;"></li><li><a' + 
+        CheckPage("home") + ' href="/">Home</a></li><li><a' + 
+        CheckPage("games") + ' href="/games/">Games</a></li><li><a' + 
+        CheckPage("social") + ' href="/social/">Social</a></li><li style="float: right;"' + 
+        CheckPage("settings") + '><a href="/settings/"><img src="/files/image/UI/settingsButton.png" height="24.5" width="24.5" style="display: block;"></a></li></ul>';
