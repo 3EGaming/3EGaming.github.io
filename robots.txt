@@ -5,6 +5,8 @@
 User-agent: *
 Disallow: /files/html
 Allow: /projects
+Allow: /games
+Allow: /social
 
 # sitemaps
 
