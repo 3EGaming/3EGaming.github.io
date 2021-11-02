@@ -22,7 +22,7 @@ if (loadTopbar) {
         }
     }
 
-    document.getElementById("topbar").innerHTML = '<ul><li><img src="/files/image/Branding/LOGO3E.png" height="51" width="170" style="display: block;margin-right: 0.3px;"></li><li><a' + 
+    document.getElementById("topbar").innerHTML = '<ul><li><img src="/files/image/Branding/LOGO3E.png" height="51" width="170" style="display: block;margin-right: 0.3px;" alt="3EGaming"></li><li><a' + 
             CheckPage("home") + ' href="/">Home</a></li><li><a' + 
             CheckPage("games") + ' href="/games/">Games</a></li><li><a' + 
             CheckPage("social") + ' href="/social/">Social</a></li><li style="float: right;"' + 
