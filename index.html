@@ -38,9 +38,9 @@
             var fadeInDiv = document.getElementById("fadeInContent");
 
             function AddOpacityFadeIn() {
-                fadeInDiv.style.opacity += 0.05;
-                if (fadeInDiv.style.opacity != 1) {
-                    console.log("call again in 500ms");
+                fadeInDiv.style.opacity = fadeInDiv.style.opacity + 0.05;
+                if (fadeInDiv.style.opacity < 1) {
+                    //console.log("call again in 500ms");
                     setTimeout(AddOpacityFadeIn,500);
                 }
             }
