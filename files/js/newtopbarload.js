@@ -1,6 +1,6 @@
 var loadTopbar;
 
-if (urlVariables == undefined) {
+if (typeof urlVariables == "undefined") {
     loadTopbar = true;
 } else {
     if (urlVariables["notopbar"] == "") {
