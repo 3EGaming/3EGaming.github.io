@@ -9,7 +9,7 @@ function LoadCss(cssPath) {
     head.appendChild(thisCss); 
 }
 
-LoadCss('/files/css/themes/common.css');
+LoadCss('/assets/styles/themes/common.css');
 
 var mode;
 
@@ -19,7 +19,7 @@ if (getCookie("theme") == "") {
     mode = getCookie("theme");
 }
 
-LoadCss('/files/css/themes/' + mode + '.css');
+LoadCss('/assets/styles/themes/' + mode + '.css');
 
 function OnClickTheme(newMode) {
     setCookie("theme",newMode,420);
