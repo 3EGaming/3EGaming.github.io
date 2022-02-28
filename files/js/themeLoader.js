@@ -11,25 +11,17 @@ function LoadCss(cssPath) {
 
 LoadCss('/files/css/themes/common.css');
 
+var mode;
+
 if (getCookie("theme") == "") {
-    var mode = "dark";
+    mode = "dark";
 } else {
-    var mode = getCookie("theme");
+    mode = getCookie("theme");
 }
 
 LoadCss('/files/css/themes/' + mode + '.css');
 
-function OnClickThemeCommon() {
-    setCookie("theme",mode,420);
+function OnClickTheme(newMode) {
+    setCookie("theme",newMode,420);
     window.location.reload();
-}
-
-function OnClickDarkMode() {
-    mode = "dark";
-    OnClickThemeCommon();
-}
-
-function OnClickLightMode() {
-    mode = "light";
-    OnClickThemeCommon();
 }
