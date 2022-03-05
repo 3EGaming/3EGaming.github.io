@@ -7,7 +7,7 @@ var heartBeatInterval;
 
 var toSend = [];
 
-const webSocketLocation = 'wss://simple-message-app-test.herokuapp.com:42069';
+const webSocketLocation = 'wss://simple-message-app-test.herokuapp.com';
 
 function onMessage(event) {
     var splitData = event.data.split(",", 3);
@@ -34,6 +34,8 @@ function connectToServer(newUsername) {
       
     socket.onclose = function(event) {
         console.log(`connection closed\ncode=${event.code} reason=${event.reason} \n clean?: ${event.wasClean}`);
+        alert(`Initial connection to server failed.\ncode=${event.code}`);
+        window.location.reload();
     };
 }
 
