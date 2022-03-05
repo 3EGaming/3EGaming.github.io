@@ -34,8 +34,10 @@ function connectToServer(newUsername) {
       
     socket.onclose = function(event) {
         console.log(`connection closed\ncode=${event.code} reason=${event.reason} \n clean?: ${event.wasClean}`);
-        alert(`Initial connection to server failed.\ncode=${event.code}`);
-        window.location.reload();
+        if (event.code != 1000) {
+            alert(`Initial connection to server failed.\ncode=${event.code}`);
+            window.location.reload();
+        }
     };
 }
 
