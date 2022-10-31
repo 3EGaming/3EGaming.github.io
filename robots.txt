@@ -3,7 +3,6 @@
 # main
 
 User-agent: *
-Allow: /projects
 Allow: /games
 Allow: /social
 
