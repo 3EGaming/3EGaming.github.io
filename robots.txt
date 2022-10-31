@@ -10,4 +10,4 @@ Allow: /social
 
 # sitemaps
 
-Sitemap: https://3EGaming.github.io/files/sitemaps/main.xml
+Sitemap: https://3EGaming.github.io/assets/sitemaps/main.xml
