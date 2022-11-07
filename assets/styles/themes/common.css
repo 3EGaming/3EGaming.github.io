@@ -18,3 +18,14 @@ ul {
     background-color: #333;
     font-family: Jost;
 }
+
+.defaultText {
+    font-family: Jost;
+}
+
+li a, .dropbtn {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}

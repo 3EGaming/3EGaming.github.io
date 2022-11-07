@@ -1,9 +1,5 @@
 li a, .dropbtn {
-    display: block;
     color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 }
 
 li a:hover {
@@ -11,15 +7,10 @@ li a:hover {
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
     background-color: #cccccc;
 }
 
 .defaultText {
-    font-family: Jost;
     color: rgb(0, 0, 0);
 }
 
