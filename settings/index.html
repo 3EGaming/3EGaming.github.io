@@ -18,13 +18,38 @@
 <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
 
 <style>
-    .buttons {
-        padding: 5px 15px;
-	    margin: 0px 15px;
-    }
     .buttonText {
         color: black !important;
-        font-size: 20px;
+    }
+    @media all and (max-width: 750px) {
+        .buttonText {
+            font-size: 20px;
+        }
+        .buttons {
+	        margin: 10px 25px;
+            padding: 5px 15px;
+        }
+        .sectionTitle {
+            font-size: 1.5em;
+        }
+        .sectionInfo {
+            font-size: 1.17em;
+        }
+    }
+    @media all and (min-width: 750px) {
+        .buttonText {
+            font-size: 15px;
+        }
+        .buttons {
+	        margin: 0px 5px;
+            padding: 5px 10px;
+        }
+        .sectionTitle {
+            font-size: 1.17em;
+        }
+        .sectionInfo {
+            font-size: 1em;
+        }
     }
 </style>
 
@@ -37,8 +62,8 @@
     <div id="topbar"></div><script src="/assets/scripts/site/navbar.js"></script>
     <div style="text-align: center;" class="defaultText"><H1>Settings</H1><div id="settings">
         <div id="darklightmode">
-            <H3>Theme</H3>
-            <H4>By choosing a theme you accept the use of cookies to store your choice.</H4>
+            <H3 class="sectionTitle">Theme</H3>
+            <H4 class="sectionInfo">By choosing a theme you accept the use of cookies to store your choice.</H4>
             <div height="50"><button onclick="OnClickTheme('dark');" class="buttons"><a class="defaultText buttonText">Dark Mode</a></button><button onclick="OnClickTheme('light');" class="buttons"><a class="defaultText buttonText">Light Mode</a></button></div>
         </div>
     </div></div>
