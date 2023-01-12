@@ -1,3 +1,3 @@
 function getDomain() {
-return ((window.location.href).split("/"))[2]
+	return ((window.location.href).split("/"))[2]
 }
