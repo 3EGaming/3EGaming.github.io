@@ -3,11 +3,13 @@ li a, .dropbtn {
 }
 
 li a:hover {
-    background-color: rgb(150, 150, 150);
+    /*background-color: rgb(150, 150, 150);*/
+    background: linear-gradient(#969696, #565656);
 }
 
 ul {
-    background-color: #cccccc;
+    /*background-color: #cccccc;*/
+    background: linear-gradient(#FFFFFF, #BBBBBB);
 }
 
 .defaultText {

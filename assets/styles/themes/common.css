@@ -3,7 +3,8 @@ li {
 }
 
 .active {
-    background-color: #00881d;
+    /*background-color: #00881d;*/
+    background: linear-gradient(#00881d, #00440f);
 }
 
 ul {
@@ -15,7 +16,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    /*background-color: #333;*/
+    /*background: linear-gradient(#4b4b4b, #252525);*/
     font-family: Jost;
 }
 
