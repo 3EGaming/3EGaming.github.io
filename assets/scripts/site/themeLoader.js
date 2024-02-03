@@ -1,6 +1,7 @@
 var head = document.getElementsByTagName('HEAD')[0];
 
-function LoadCss(cssPath) {
+function LoadCss(cssPath) 
+{
     var thisCss = document.createElement('link');
     thisCss.rel = 'stylesheet';
     thisCss.type = 'text/css';
@@ -11,17 +12,17 @@ function LoadCss(cssPath) {
 
 LoadCss('/assets/styles/themes/common.css');
 
-var mode;
+var mode = getCookie("theme");
 
-if (getCookie("theme") == "") {
+if (mode == "") 
+{
     mode = "dark";
-} else {
-    mode = getCookie("theme");
 }
 
 LoadCss('/assets/styles/themes/' + mode + '.css');
 
-function OnClickTheme(newMode) {
-    setCookie("theme",newMode,420);
+function OnClickTheme(newMode) 
+{
+    setCookie("theme", newMode, 420);
     window.location.reload();
 }
