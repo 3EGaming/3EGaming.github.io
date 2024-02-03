@@ -1,21 +1,26 @@
-li a, .dropbtn {
+li a, .dropbtn 
+{
     color: white;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover, .dropdown:hover .dropbtn 
+{
     /*background-color: rgb(46, 46, 46);*/
     background: linear-gradient(#2E2E2E, #0E0E0E);
 }
 
-ul {
+ul 
+{
     /*background-color: rgb(14, 14, 14);*/
     background: linear-gradient(#353535, #151515);
 }
 
-.defaultText {
+.defaultText 
+{
     color: rgb(226, 226, 226);
 }
 
-body {
+body 
+{
     background-color: #363636;
 }

@@ -1,13 +1,16 @@
-li {
+li 
+{
     float: left;
 }
 
-.active {
+.active 
+{
     /*background-color: #00881d;*/
     background: linear-gradient(#00881d, #00440f);
 }
 
-ul {
+ul 
+{
     position: fixed;
     top: 0;
     left: 0;
@@ -21,13 +24,25 @@ ul {
     font-family: Jost;
 }
 
-.defaultText {
+.defaultText 
+{
     font-family: Jost;
 }
 
-li a, .dropbtn {
+li a, .dropbtn
+{
     display: block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+.navbarLogo
+{
+    background: url("/assets/images/branding/LOGO3E.png");
+    width: 170px;
+    height: 51px;
+    background-size: 170px 51px;
+    background-repeat: no-repeat;
+    background-position: center;
 }

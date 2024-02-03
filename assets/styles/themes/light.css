@@ -1,21 +1,26 @@
-li a, .dropbtn {
+li a, .dropbtn 
+{
     color: rgb(0, 0, 0);
 }
 
-li a:hover {
+li a:hover 
+{
     /*background-color: rgb(150, 150, 150);*/
     background: linear-gradient(#969696, #565656);
 }
 
-ul {
+ul 
+{
     /*background-color: #cccccc;*/
     background: linear-gradient(#FFFFFF, #BBBBBB);
 }
 
-.defaultText {
+.defaultText 
+{
     color: rgb(0, 0, 0);
 }
 
-body {
+body 
+{
     background-color: #ffffff;
 }
