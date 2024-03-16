@@ -1,3 +1,6 @@
+@import url("./dark.css");
+@import url("https://indestructibletype.com/fonts/Jost.css");
+
 li 
 {
     float: left;
@@ -5,7 +8,6 @@ li
 
 .active 
 {
-    /*background-color: #00881d;*/
     background: linear-gradient(#00881d, #00440f);
 }
 
@@ -19,12 +21,10 @@ ul
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /*background-color: #333;*/
-    /*background: linear-gradient(#4b4b4b, #252525);*/
     font-family: Jost;
 }
 
-.defaultText 
+body
 {
     font-family: Jost;
 }

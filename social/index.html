@@ -15,9 +15,10 @@
         <meta name="theme-color" content="#0f800d">
         <meta name="google" content="notranslate">
         <meta name="robots" content="index, follow" />
-        <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
+        
+        <link rel="stylesheet" href="/assets/styles/themes/common.css" type="text/css" charset="utf-8" />
 
-        <script src="/assets/scripts/general/urlvar.js"></script>
+        <script src="/assets/scripts/general/urlparameters.js"></script>
 
         <script>
             var youtubeURL = "https://youtube.com/3EGamingDev";
@@ -30,34 +31,43 @@
             var itchURL = "https://3EGaming.itch.io/";
             var discordURL = "https://discord.com/invite/Rzh5CsBpTQ";
 
-            var rt = urlVariables["r"];
-            if (rt == "youtube") {
+            switch (urlParameters.get("r"))
+            {
+            case "youtube":
                 window.location.replace(youtubeURL);
-            } else if (rt == "github") {
+                break;
+            case "github":
                 window.location.replace(githubURL);
-            } else if (rt == "instagram") {
+                break;
+            case "instagram":
                 window.location.replace(instagramURL);
-            } else if (rt == "facebook") {
+                break;
+            case "facebook":
                 window.location.replace(facebookURL);
-            } else if (rt == "twitch") {
+                break;
+            case "twitch":
                 window.location.replace(twitchURL);
-            } else if (rt == "reddit") {
+                break;
+            case "reddit":
                 window.location.replace(redditURL);
-            } else if (rt == "twitter") {
+                break;
+            case "twitter":
                 window.location.replace(twitterURL);
-            } else if (rt == "itch") {
+                break;
+            case "itch":
                 window.location.replace(itchURL);
-            } else if (rt == "discord") {
+                break;
+            case "discord":
                 window.location.replace(discordURL);
+                break;
+            default:
+                break;
             }
 
             function buttons(goTo) {
-                window.location.href = window.location.href + ("?r=" + goTo);
+                window.open(window.location.href + "?r=" + goTo, "_blank");
             }
         </script>
-
-        <script src="/assets/scripts/general/cookie.js"></script>
-        <script src="/assets/scripts/site/themeLoader.js"></script>
 
         <script>var thisPage = "social";</script>
 
@@ -85,12 +95,12 @@
                 <button onclick="buttons('discord');" class="buttons"><img src="./logos/Discord-Logo-Color.svg" class="logos"></button>
                 <button onclick="buttons('facebook');" class="buttons"><img src="./logos/f_logo_RGB-Blue_72.png" class="logos"></button>
                 <button onclick="buttons('youtube');" class="buttons"><img src="./logos/youtube_social_squircle_red.png" class="logos"></button>
-                <button onclick="buttons('github');" class="buttons"><img src="./logos/GitHub-Mark-64px.png" class="logos"></button>
+                <button onclick="buttons('github');" class="buttons"><img src="./logos/github-mark-white.png" class="logos"></button>
                 <button onclick="buttons('instagram');" class="buttons"><img src="./logos/Instagram_Glyph_Gradient_RGB.png" class="logos"></button>
                 <button onclick="buttons('twitch');" class="buttons"><img src="./logos/TwitchGlitchPurple.png" class="logos"></button>
                 <button onclick="buttons('reddit');" class="buttons"><img src="./logos/reddit-logo.png" class="logos"></button>
                 <button onclick="buttons('twitter');" class="buttons"><img src="./logos/Twitter social icons - rounded square - blue.png" class="logos"></button>
-                <button onclick="buttons('itch');" class="buttons"><img src="./logos/itchio-logo-textless-black.png" class="logos"></button>
+                <button onclick="buttons('itch');" class="buttons"><img src="./logos/itchio-logo-textless-white.png" class="logos"></button>
             </div>
         </div>
     </BODY>

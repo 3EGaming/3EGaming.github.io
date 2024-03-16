@@ -5,22 +5,16 @@ li a, .dropbtn
 
 li a:hover, .dropdown:hover .dropbtn 
 {
-    /*background-color: rgb(46, 46, 46);*/
     background: linear-gradient(#2E2E2E, #0E0E0E);
 }
 
 ul 
 {
-    /*background-color: rgb(14, 14, 14);*/
-    background: linear-gradient(#353535, #151515);
+    background: linear-gradient(#454545, #202020);
 }
 
-.defaultText 
+body
 {
     color: rgb(226, 226, 226);
-}
-
-body 
-{
-    background-color: #363636;
+    background-color: #151515;
 }
