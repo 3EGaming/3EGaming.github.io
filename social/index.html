@@ -30,6 +30,7 @@
             var twitterURL = "https://twitter.com/3EGamingDev";
             var itchURL = "https://3EGaming.itch.io/";
             var discordURL = "https://discord.com/invite/Rzh5CsBpTQ";
+            var bskyURL = "https://bsky.app/profile/3egaming.bsky.social";
 
             switch (urlParameters.get("r"))
             {
@@ -59,6 +60,10 @@
                 break;
             case "discord":
                 window.location.replace(discordURL);
+                break;
+            case "bluesky":
+            case "bsky":
+                window.location.replace(bskyURL);
                 break;
             default:
                 break;
@@ -101,6 +106,7 @@
                 <button onclick="buttons('reddit');" class="buttons"><img src="./logos/reddit-logo.png" class="logos"></button>
                 <button onclick="buttons('twitter');" class="buttons"><img src="./logos/Twitter social icons - rounded square - blue.png" class="logos"></button>
                 <button onclick="buttons('itch');" class="buttons"><img src="./logos/itchio-logo-textless-white.png" class="logos"></button>
+                <button onclick="buttons('bsky');" class="buttons"><img src="./logos/bluesky.png" class="logos"></button>
             </div>
         </div>
     </BODY>
