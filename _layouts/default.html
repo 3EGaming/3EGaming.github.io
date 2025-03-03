@@ -1,0 +1,61 @@
+{% if page.image == null %}
+{% assign image = "https://3EGaming.github.io/assets/images/branding/LOGO3E.png" %}
+{% else %}
+{% assign image = page.image %}
+{% endif %}
+
+{% if page.imagealt == null %}
+{% assign imagealt = "3EGaming" %}
+{% else %}
+{% assign imagealt = page.imagealt %}
+{% endif %}
+
+{% if page.imagetype == null %}
+{% assign imagetype = "png" %}
+{% else %}
+{% assign imagetype = page.imagetype %}
+{% endif %}
+
+{% if page.thumbnail == null %}
+{% assign thumbnail = "https://3EGaming.github.io/assets/images/branding/SQUARE3E.png" %}
+{% else %}
+{% assign thumbnail = page.thumbnail %}
+{% endif %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>3EGaming - {{ page.title }}</title>
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+		<meta name="theme-color" content="#258545">
+		<meta http-equiv='content-language' content='en-gb'>
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="3EGaming - {{ page.title }}" />
+        <meta name="Description" content="{{ page.description }}" />
+        <meta property="og:description" content="{{ page.description }}" />
+        {% if image != "none" %}<meta property="og:image" content="{{ image }}">{% endif %}
+        {% if imagealt != "none" %}<meta property="og:image:alt" content="{{ imagealt }}">{% endif %}
+        {% if imagetype != "none" %}<meta property="og:image:type" content="image/{{ imagetype }}">{% endif %}
+        {% if thumbnail != "none" %}<meta name="thumbnail" content="{{ thumbnail }}" />{% endif %}
+        <meta name="google" content="notranslate">
+		{% if page.url == "/" %}
+        <meta name="msvalidate.01" content="E4F1E1048D4C137A95C452D497F73F9F" />
+		<meta name="yandex-verification" content="7173bac43878f3f8" />
+        <meta name="google-site-verification" content="mTn5_I7J5tK7zGGwomP4DNhl9z12DzWfNYa1Eo2HHPo" />
+		{% endif %}
+		<link href="/assets/styles/main.css" rel="stylesheet" />
+		<script src="/assets/scripts/navBar.js"></script>
+	</head>
+	<body>
+	<img class="mainLogo">
+	<div id="navBar" class="navBar">
+		{% for tab in site.data.navbarpages %}
+		<a class="navButton{% if tab.name == page.navbarselected %} navActive{% endif %}" href="{{ tab.path }}">{{ tab.name }}</a>
+		{% endfor %}
+		<a class="navButton navMenuButton" href="#" onclick="clickNavMenuButton()">☰</a>
+	</div>
+	<div class="mainContent">
+		{{ content }}
+	</div>
+	</body>
+</html>

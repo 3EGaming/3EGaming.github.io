@@ -1,0 +1,116 @@
+body
+{
+	background-color: #353535;
+	font-family: Veranda, sans-serif;
+}
+
+.navBar
+{
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	background: linear-gradient(#454545, #202020);
+	height: 50px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	clip-path: border-box;
+	font-size: 0px;
+}
+
+.navButton
+{
+	line-height: 50px;
+	margin: 0px;
+	padding: 11px;
+	padding-left: 25px;
+	padding-right: 25px;
+	font-size: 25px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFFFFF;
+	background: #00000000;
+}
+
+.navButton:hover
+{
+	background: linear-gradient(#2E2E2E, #0E0E0E);
+}
+
+.navActive, .navActive:hover
+{
+	background: linear-gradient(#303030, #151515);
+	cursor: default;
+}
+
+.navMenuButton
+{
+	float: right;
+	line-height: 0px;
+	display: none;
+}
+
+.mainLogo
+{
+	margin-left: 50px;
+	margin-top: 10px;
+	content: url("/assets/images/branding/LOGO3E.png");
+	width: 175px;
+	height: 50px;
+}
+
+.mainContent
+{
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 0px;
+	margin-bottom: 100px;
+	padding: 25px;
+	color: #FFFFFF;
+	background-color: #151515;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+@media (max-width: 650px)
+{
+	.navButton
+	{
+		display: none;
+		line-height: 28px;
+	}
+	
+	.navMenuButton, .navActive
+	{
+		display: inline-block;
+	}
+	
+	.mainContent, .navBar
+	{
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	
+	.mainLogo
+	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.navMenuOpen
+	{
+		height: auto;
+		.navButton
+		{
+			display: block;
+		}
+		.navMenuButton
+		{
+			display: auto;
+			position: absolute;
+			top: 70px;
+			right: 23px;
+		}
+	}
+}

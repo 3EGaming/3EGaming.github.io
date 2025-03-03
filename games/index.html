@@ -1,42 +1,17 @@
-<!DOCTYPE html>
-<HTML lang="en">
-<HEAD>
-<title>3EGaming - Games</title>
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="icon" href="https://3EGaming.github.io/favicon.ico" type="image/x-icon" />
-<meta property="og:title" content="3EGaming - Games" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="/assets/images/branding/LOGO3E.png">
-<meta property="og:image:type" content="image/png">
-<meta http-equiv='content-language' content='en-gb'>
-<meta name="Description" CONTENT="Games by 3EGaming." />
-<meta property="og:description" content="Games by 3EGaming." />
-<meta name="thumbnail" content="/assets/images/branding/SQUARE3E.png" />
-<meta name="theme-color" content="#0f800d">
-<meta name="google" content="notranslate">
-<meta name="robots" content="index, follow" />
+---
+title: Games
+description: Games by 3EGaming.
+navbarselected: Games
+layout: default
+---
 
-<link rel="stylesheet" href="/assets/styles/themes/common.css" type="text/css" charset="utf-8" />
+<link rel="stylesheet" property="stylesheet" href="gameButtons.css" />
 
-<link rel="stylesheet" href="./gameButtons.css" type="text/css"></link>
-
-<script>
-    function onClickGame(gameId) {
-        window.location.href += ("./" + gameId);
-    }
-</script>
-
-<script>var thisPage = "games";</script>
-</HEAD>
-<BODY>
-    <div id="topbar"></div><script src="/assets/scripts/site/navbar.js"></script>
-    <div style="text-align: center;">
-        <H1>Games</H1>
-        <P>&#10240;</P>
-        <div id="gameButtons" height="200px">
-            <div class="gameButton" onclick="onClickGame('trollycat');"><img src="./trollycat/pre.png" alt="Trolly Cat" class="gameButtonImage"></div>
-            <div class="gameButton" onclick="onClickGame('DVD');"><img src="./DVD/pre.png" alt="DVD Game" class="gameButtonImage"></div>
-        </div>
+<div style="text-align: center;">
+    <h1>Games</h1>
+    <br/>
+    <div id="gameButtons" height="200px">
+        <div class="gameButton"><a href="./trollycat"><img src="./trollycat/pre.png" alt="Trolly Cat" class="gameButtonImage"></a></div>
+        <div class="gameButton"><a href="DVD"><img src="./DVD/pre.png" alt="DVD Game" class="gameButtonImage"></a></div>
     </div>
-</BODY>
-</HTML>
+</div>

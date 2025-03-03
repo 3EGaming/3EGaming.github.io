@@ -1,0 +1,8 @@
+- name: Home
+  path: /
+
+- name: Games
+  path: /games
+
+- name: Socials
+  path: /social

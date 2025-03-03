@@ -1,122 +1,65 @@
-<!DOCTYPE html xmlns="http://www.w3.org/2000/svg">
-<HTML lang="en">
-    <HEAD>
-        <title>3EGaming - Social</title>
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="https://3EGaming.github.io/favicon.ico" type="image/x-icon" />
-        <meta property="og:title" content="3EGaming - Social" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="/assets/images/branding/LOGO3E.png">
-        <meta property="og:image:type" content="image/png">
-        <meta http-equiv='content-language' content='en-gb'>
-        <meta name="Description" CONTENT="3EGaming social medias." />
-        <meta property="og:description" content="3EGaming social medias." />
-        <meta name="thumbnail" content="/assets/images/branding/SQUARE3E.png" />
-        <meta name="theme-color" content="#0f800d">
-        <meta name="google" content="notranslate">
-        <meta name="robots" content="index, follow" />
+---
+title: Social
+navbarselected: Socials
+layout: default
+---
 
-        <script src="/assets/scripts/general/urlparameters.js"></script>
+<link rel="stylesheet" property="stylesheet" href="social.css" />
 
-        <script>
-            var youtubeURL = "https://youtube.com/3EGamingDev";
-            var githubURL = "https://github.com/3EGaming";
-            var instagramURL = "https://instagram.com/3EGaming";
-            var facebookURL = "https://fb.me/3EGamingDev";
-            var twitchURL = "https://twitch.tv/3egamingdev";
-            var redditURL = "https://www.reddit.com/user/3EGamingDev";
-            var twitterURL = "https://twitter.com/3EGamingDev";
-            var itchURL = "https://3EGaming.itch.io/";
-            var discordURL = "https://discord.com/invite/Rzh5CsBpTQ";
-            var bskyURL = "https://bsky.app/profile/3egaming.bsky.social";
-			
-			function stopLoadAndGoTo(url)
-			{
-				window.stop();
-				window.location.replace(url);
-			}
+<script src="/assets/scripts/general/urlparameters.js"></script>
 
-            switch (urlParameters.get("r"))
-            {
+<script>
+    function GetSocialURL(id)
+    {
+        switch (id)
+        {
             case "youtube":
-                stopLoadAndGoTo(youtubeURL);
-                break;
+                return "https://youtube.com/3EGamingDev";
             case "github":
-                stopLoadAndGoTo(githubURL);
-                break;
+                return "https://github.com/3EGaming";
             case "instagram":
-                stopLoadAndGoTo(instagramURL);
-                break;
+                return "https://instagram.com/3EGaming";
             case "facebook":
-                stopLoadAndGoTo(facebookURL);
-                break;
+                return "https://fb.me/3EGamingDev";
             case "twitch":
-                stopLoadAndGoTo(twitchURL);
-                break;
+                return "https://twitch.tv/3egamingdev";
             case "reddit":
-                stopLoadAndGoTo(redditURL);
-                break;
+                return "https://www.reddit.com/user/3EGamingDev";
             case "twitter":
-                stopLoadAndGoTo(twitterURL);
-                break;
+                return "https://twitter.com/3EGamingDev";
             case "itch":
-                stopLoadAndGoTo(itchURL);
-                break;
+                return "https://3EGaming.itch.io/";
             case "discord":
-                stopLoadAndGoTo(discordURL);
-                break;
+                return "https://discord.com/invite/Rzh5CsBpTQ";
             case "bluesky":
             case "bsky":
-                stopLoadAndGoTo(bskyURL);
-                break;
+                return "https://bsky.app/profile/3egaming.bsky.social";
             default:
-                break;
-            }
+                return "";
+        }
+    }
 
-            function buttons(goTo)
-			{
-                window.open(window.location.href + "?r=" + goTo, "_blank");
-            }
-        </script>
-        
-        <link rel="stylesheet" href="/assets/styles/themes/common.css" type="text/css" charset="utf-8" />
+    function OpenSocial(id, newWindow = true)
+    {
+        var _redirectURL = GetSocialURL(id);
+        if (_redirectURL != "")
+        {
+            window.open(_redirectURL, newWindow ? "_blank" : "_self");
+        }
+    }
 
-        <script>var thisPage = "social";</script>
+    OpenSocial(urlParameters.get("r"), false);
+</script>
 
-        <style>
-            .logos
-			{
-                height: 75;
-                width: 75;
-            }
-
-            .buttons
-			{
-                padding: 25;
-                border: none;
-                background: none;
-                cursor: pointer;
-            }
-
-            button:hover { opacity: .5; }
-        </style>
-    </HEAD>
-    <BODY>
-        <div id="topbar"></div><script src="/assets/scripts/site/navbar.js"></script>
-        <div style="text-align: center;" class="defaultText">
-            <H1>Social</H1>
-            <div id="buttons">
-                <button onclick="buttons('discord');" class="buttons"><img src="./logos/Discord-Logo-Color.svg" class="logos"></button>
-                <button onclick="buttons('facebook');" class="buttons"><img src="./logos/f_logo_RGB-Blue_72.png" class="logos"></button>
-                <button onclick="buttons('youtube');" class="buttons"><img src="./logos/youtube_social_squircle_red.png" class="logos"></button>
-                <button onclick="buttons('github');" class="buttons"><img src="./logos/github-mark-white.png" class="logos"></button>
-                <button onclick="buttons('instagram');" class="buttons"><img src="./logos/Instagram_Glyph_Gradient_RGB.png" class="logos"></button>
-                <button onclick="buttons('twitch');" class="buttons"><img src="./logos/TwitchGlitchPurple.png" class="logos"></button>
-                <button onclick="buttons('reddit');" class="buttons"><img src="./logos/reddit-logo.png" class="logos"></button>
-                <button onclick="buttons('twitter');" class="buttons"><img src="./logos/Twitter social icons - rounded square - blue.png" class="logos"></button>
-                <button onclick="buttons('itch');" class="buttons"><img src="./logos/itchio-logo-textless-white.png" class="logos"></button>
-                <button onclick="buttons('bsky');" class="buttons"><img src="./logos/bluesky.png" class="logos"></button>
-            </div>
-        </div>
-    </BODY>
-</HTML>
+<div style="text-align: center;">
+    <button onclick="OpenSocial('discord')" class="buttons"><img src="./logos/discord.svg" class="logos"></button>
+    <button onclick="OpenSocial('facebook')" class="buttons"><img src="./logos/facebook.png" class="logos"></button>
+    <button onclick="OpenSocial('youtube')" class="buttons"><img src="./logos/youtube.png" class="logos"></button>
+    <button onclick="OpenSocial('github')" class="buttons"><img src="./logos/github_white.png" class="logos"></button>
+    <button onclick="OpenSocial('instagram')" class="buttons"><img src="./logos/instagram.png" class="logos"></button>
+    <button onclick="OpenSocial('twitch')" class="buttons"><img src="./logos/twitch.png" class="logos"></button>
+    <button onclick="OpenSocial('reddit')" class="buttons"><img src="./logos/reddit.png" class="logos"></button>
+    <button onclick="OpenSocial('twitter')" class="buttons"><img src="./logos/twitter.png" class="logos"></button>
+    <button onclick="OpenSocial('itch')" class="buttons"><img src="./logos/itchio_white.png" class="logos"></button>
+    <button onclick="OpenSocial('bluesky')" class="buttons"><img src="./logos/bluesky.png" class="logos"></button>
+</div>
