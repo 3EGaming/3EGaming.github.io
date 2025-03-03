@@ -15,8 +15,6 @@
         <meta name="theme-color" content="#0f800d">
         <meta name="google" content="notranslate">
         <meta name="robots" content="index, follow" />
-        
-        <link rel="stylesheet" href="/assets/styles/themes/common.css" type="text/css" charset="utf-8" />
 
         <script src="/assets/scripts/general/urlparameters.js"></script>
 
@@ -31,65 +29,76 @@
             var itchURL = "https://3EGaming.itch.io/";
             var discordURL = "https://discord.com/invite/Rzh5CsBpTQ";
             var bskyURL = "https://bsky.app/profile/3egaming.bsky.social";
+			
+			function stopLoadAndGoTo(url)
+			{
+				window.stop();
+				window.location.replace(url);
+			}
 
             switch (urlParameters.get("r"))
             {
             case "youtube":
-                window.location.replace(youtubeURL);
+                stopLoadAndGoTo(youtubeURL);
                 break;
             case "github":
-                window.location.replace(githubURL);
+                stopLoadAndGoTo(githubURL);
                 break;
             case "instagram":
-                window.location.replace(instagramURL);
+                stopLoadAndGoTo(instagramURL);
                 break;
             case "facebook":
-                window.location.replace(facebookURL);
+                stopLoadAndGoTo(facebookURL);
                 break;
             case "twitch":
-                window.location.replace(twitchURL);
+                stopLoadAndGoTo(twitchURL);
                 break;
             case "reddit":
-                window.location.replace(redditURL);
+                stopLoadAndGoTo(redditURL);
                 break;
             case "twitter":
-                window.location.replace(twitterURL);
+                stopLoadAndGoTo(twitterURL);
                 break;
             case "itch":
-                window.location.replace(itchURL);
+                stopLoadAndGoTo(itchURL);
                 break;
             case "discord":
-                window.location.replace(discordURL);
+                stopLoadAndGoTo(discordURL);
                 break;
             case "bluesky":
             case "bsky":
-                window.location.replace(bskyURL);
+                stopLoadAndGoTo(bskyURL);
                 break;
             default:
                 break;
             }
 
-            function buttons(goTo) {
+            function buttons(goTo)
+			{
                 window.open(window.location.href + "?r=" + goTo, "_blank");
             }
         </script>
+        
+        <link rel="stylesheet" href="/assets/styles/themes/common.css" type="text/css" charset="utf-8" />
 
         <script>var thisPage = "social";</script>
 
         <style>
-            .logos {
+            .logos
+			{
                 height: 75;
                 width: 75;
             }
 
-            .buttons {
+            .buttons
+			{
                 padding: 25;
                 border: none;
                 background: none;
                 cursor: pointer;
             }
 
-            button:hover { opacity: .5;}
+            button:hover { opacity: .5; }
         </style>
     </HEAD>
     <BODY>
