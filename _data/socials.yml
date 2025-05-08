@@ -1,0 +1,40 @@
+- name: Discord
+  icon: discord.svg
+  url: https://discord.com/invite/Rzh5CsBpTQ
+
+- name: Youtube
+  icon: youtube.png
+  url: https://youtube.com/channel/UCL-kUN-Mymp-8ADOobQansA
+
+- name: Github
+  icon: github_white.png
+  url: https://github.com/3EGaming
+
+- name: Instagram
+  icon: instagram.png
+  url: https://instagram.com/3EGaming
+
+- name: Facebook
+  icon: facebook.png
+  url: https://fb.me/3EGamingDev
+
+- name: Twitch
+  icon: twitch.png
+  url: https://twitch.tv/3egamingdev
+
+- name: Reddit
+  icon: reddit.png
+  url: https://www.reddit.com/user/3EGamingDev
+
+- name: Twitter
+  icon: twitter.png
+  url: https://twitter.com/3EGamingDev
+
+- name: Itch
+  icon: itchio_white.png
+  url: https://3EGaming.itch.io/
+
+- name: Bluesky
+  icon: bluesky.png
+  url: https://bsky.app/profile/3egaming.bsky.social
+  alts: bsky
