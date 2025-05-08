@@ -1,6 +1,9 @@
 body
 {
-	background-color: #353535;
+	background: #020502;
+	background: linear-gradient(to bottom right, #071007, #020502);
+	min-height: 100vh;
+	margin: 0px;
 	font-family: Veranda, sans-serif;
 }
 
@@ -10,6 +13,7 @@ body
 	margin-right: 50px;
 	margin-top: 10px;
 	margin-bottom: 0px;
+	background: #202020;
 	background: linear-gradient(#454545, #202020);
 	height: 50px;
 	border-top-right-radius: 5px;
@@ -34,11 +38,13 @@ body
 
 .navButton:hover
 {
+	background: #0E0E0E;
 	background: linear-gradient(#2E2E2E, #0E0E0E);
 }
 
 .navActive, .navActive:hover
 {
+	background: #151515;
 	background: linear-gradient(#303030, #151515);
 	cursor: default;
 }
@@ -54,7 +60,6 @@ body
 {
 	margin-left: 50px;
 	margin-top: 10px;
-	content: url("/assets/images/branding/LOGO3E.png");
 	width: 175px;
 	height: 50px;
 }
@@ -110,7 +115,7 @@ body
 			display: auto;
 			position: absolute;
 			top: 70px;
-			right: 23px;
+			right: 15px;
 		}
 	}
 }

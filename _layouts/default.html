@@ -47,7 +47,7 @@
 		<script src="/assets/scripts/navBar.js"></script>
 	</head>
 	<body>
-	<img class="mainLogo">
+	<img src="/assets/images/branding/LOGO3E.png" class="mainLogo">
 	<div id="navBar" class="navBar">
 		{% for tab in site.data.navbarpages %}
 		<a class="navButton{% if tab.name == page.navbarselected %} navActive{% endif %}" href="{{ tab.path }}">{{ tab.name }}</a>
