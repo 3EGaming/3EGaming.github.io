@@ -109,6 +109,7 @@ body
 		.navButton
 		{
 			display: block;
+			background-color: #00000000;
 		}
 		.navMenuButton
 		{
@@ -116,6 +117,14 @@ body
 			position: absolute;
 			top: 70px;
 			right: 15px;
+		}
+		.navActive, .navActive:hover
+		{
+			background: #15151577;
+		}
+		.navButton:hover
+		{
+			background: #0E0E0E77;
 		}
 	}
 }
