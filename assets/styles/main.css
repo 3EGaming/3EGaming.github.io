@@ -77,7 +77,22 @@ body
 	border-bottom-left-radius: 5px;
 }
 
-@media (max-width: 650px)
+@media (max-width: 100vh) and (not (max-width: 600px))
+{
+	body
+	{
+		transform: scale(2);
+		width: 50vw;
+		height: 50vh;
+		min-height: 50vh;
+		position: absolute;
+		top: 25vh;
+		left: 25vw;
+		background: #071007;
+	}
+}
+
+@media (max-width: 650px), (max-width: 100vh)
 {
 	.navButton
 	{
