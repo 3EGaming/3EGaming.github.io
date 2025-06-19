@@ -19,6 +19,7 @@ body
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
 	clip-path: border-box;
+	overflow: hidden;
 	font-size: 0px;
 }
 
