@@ -33,6 +33,7 @@ body
 	font-size: 25px;
 	font-weight: bold;
 	text-decoration: none;
+	user-select: none;
 	color: #FFFFFF;
 	background: #00000000;
 }
