@@ -1,0 +1,16 @@
+{% assign firstItem = true %}
+
+[
+{% for social in site.data.socials %}
+	{% if firstItem != true %}
+		,
+	{% else %}
+		{% assign firstItem = false %}
+	{% endif %}
+	{
+		"name": "{{social.name}}",
+		"icon": "https://3egaming.github.io/social/logos/{{social.icon}}",
+		"url": "{{social.url}}"
+	}
+{% endfor %}
+]
