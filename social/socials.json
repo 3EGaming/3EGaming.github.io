@@ -3,10 +3,10 @@ layout: none
 ---
 [
 {%- for social in site.data.socials %}
-{
-	"name": "{{social.name}}",
-	"icon": "https://3egaming.github.io/social/logos/{{social.icon}}",
-	"url": "{{social.url}}"
-}{% unless forloop.last %},{% endunless %}
+  {
+    "name": "{{social.name}}",
+    "icon": "https://3egaming.github.io/social/logos/{{social.icon}}",
+    "url": "{{social.url}}"
+  }{% unless forloop.last %},{% endunless %}
 {%- endfor %}
 ]
