@@ -2,11 +2,11 @@
 layout: none
 ---
 [
-{%- for social in site.data.socials -%}
+{% for social in site.data.socials -%}
 	{
 		"name": "{{social.name}}",
 		"icon": "https://3egaming.github.io/social/logos/{{social.icon}}",
 		"url": "{{social.url}}"
 	}{% unless forloop.last %},{% endunless %}
-{%- endfor -%}
+{%- endfor %}
 ]
